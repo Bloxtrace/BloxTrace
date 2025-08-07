@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BloxTrace</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #2d004d, #a27ac0);
+      color: white;
+      height: 200vh;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(30, 30, 30, 0.9);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff0000;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #cc0000;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .glass-text {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .glass-text h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .glass-text h1 .blue {
+      color: #81b6ff;
+    }
+
+    .glass-text p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #f0f0f0;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.6s ease-out;
+    }
+
+    .download-button {
+      margin-top: 25px;
+      background-color: white;
+      color: #333;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .download-button:hover {
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>BloxTrace</h1>
+    <a href="https://www.youtube.com/@EmmazMm2" target="_blank">YouTube</a>
+  </div>
+
+  <section class="hero">
+    <div class="glass-text">
+      <h1>Illuminate <span class="blue">your</span> imagination<br>with shaders.</h1>
+      <p>Advanced post-processing, now within reach.</p>
+      <button class="download-button">Download BloxTrace</button>
+    </div>
+  </section>
+</body>
+</html>
